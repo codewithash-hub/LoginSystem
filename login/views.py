@@ -33,7 +33,7 @@ def signup(request):
         
         if pass1 != pass2:
             messages.error(request, "password didn't match!")
-            return redirect('sign')
+            return redirect('signin')
 
         if not username.isalnum():
             messages.error(request, "Username must be alphanumeric")
