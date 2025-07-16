@@ -22,6 +22,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["loginsystem-shcd.onrender.com"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://loginsystem-shcd.onrender.com"
+]
+
+
 # Application definition
 
 INSTALLED_APPS = [
