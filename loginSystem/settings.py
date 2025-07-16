@@ -18,7 +18,7 @@ EMAIL_PORT = EMAIL_PORT
 SECRET_KEY = 'django-insecure-#)lsqta*y#@uv_sl@0w6$w@zw7x&w!a#qhd)v#l+i5c=hjf1vi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["loginsystem-shcd.onrender.com"]
 
@@ -26,6 +26,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://loginsystem-shcd.onrender.com"
 ]
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Application definition
 
