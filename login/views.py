@@ -25,19 +25,19 @@ def signup(request):
             
         if User.objects.filter(email=email):
             messages.error(request, "Email already registered.")
-            return redirect('signup')
+            return redirect('home')
         
         if len(username) > 10:
             messages.error(request, "Username must be less than 10")
-            return redirect('signup')
+            return redirect('home')
         
         if pass1 != pass2:
             messages.error(request, "password didn't match!")
-            return redirect('signin')
+            return redirect('home')
 
         if not username.isalnum():
             messages.error(request, "Username must be alphanumeric")
-            return redirect('signin')
+            return redirect('home')
         
         myuser = User.objects.create_user(username, email, pass1)
         myuser.first_name = fname
