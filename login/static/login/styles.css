@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #2E382E;
+    box-shadow: border-box;
+}
+
+/* 
+
+Robin Egg Blue: #50C9CE
+Black Olive: #2E382E
+#E2F3F4
+#6DC7
+*/
+
+.container {
+    width: 100%;
+    max-width: 30%;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 12px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6DC7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #6DC7;
+    font-size: 15px;
+    outline: none;
+    color: #6DC7;
+}
+
+button {
+    padding: 10px;
+    color: #2E382E;
+    font-size: 18px;
+    border: none;
+    background: #6DC7;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #6DC7;
+    font-size: 18px;
+
+    padding: 10px;
+    color: #2E382E;
+    font-size: 18px;
+    border: none;
+    background: #6DC7;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration-style: none;
+}
+
+button:hover {
+    background-color: #50C9CE;
+    transition: .2s ease-in;
+}
+
+a:hover {
+    background-color: #50C9CE;
+    transition: .2s ease-in;
+}
+
+.landWrapper {
+    margin-top: 50%;
+}

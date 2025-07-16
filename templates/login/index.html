@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+    {% for message in messages %}
+        <div class='alert alert-{{ message.tags }} alert-dismissible fade show' role="alert">
+            <strong>Message:</strong> {{ message }}
+            <button type="button" class="Close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+
+    <div class="landWrapper">
+        <h1>Welcome to the home page</h1>
+    
+        {% if user.is_authenticated %}
+            <h3>Hello {{ fname }}</h3>
+            <h4>You're successful login</h4>
+            <button type='submit'><a href='/signout'>SignOut</a></botton> 
+        {% else %}
+            <center>
+                <a href='/signup'>SignUp</a>
+                <a href='/signin'>SignIn</a>
+            </center>
+        {% endif %} 
+    </div>
+        
+    
+{% endblock content %}
